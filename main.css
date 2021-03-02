@@ -12,6 +12,7 @@ body, html{
     width: 900px;
     margin: 0 auto;
 }
+/*header*/
 .container > header{
     background: #fff url("images/header_bg.png") repeat-x;
     color:white;
@@ -57,6 +58,52 @@ body, html{
     height: 21px;
     width: 4px;
 }
+/*end of header*/
+/*main content*/
+.container > main.homepage{
+    display:flex;
+    flex-direction: row;
+}
+.container > main.homepage > .row{
+    justify-content: space-between;
+}
+.container > main.homepage .banner{
+    margin-left:13px;
+    border-bottom-right-radius: 7px;;
+}
+.container > main.homepage .banner > img{
+    border-bottom-right-radius: 24px;
+}
+.container > main.homepage .banner > .description{
+    color:white;
+    background-color:grey;
+    position: relative;
+    top: -112px;
+    margin: 0 8px 0px 37px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    padding-bottom: 4px;
+    padding-top: 6px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.container > main.homepage .banner > .description > h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 3px 0;
+}
+.container > main.homepage .banner > .description > a{
+    align-self: flex-end;
+    background: url(images/read_more_white.png) no-repeat left center;
+}
+.container > main.homepage .banner > .description > a:hover{
+    background: url(images/read_more_blue.png) no-repeat left center;
+}
+.container > main.homepage .banner > .description > a > span{
+    padding-left: 12px;
+}
+/*end of main content*/
 .row{
     width:100%;
     display:flex;
@@ -64,4 +111,10 @@ body, html{
 .end{
     justify-content: flex-end;
     align-items: center;
+}
+a{
+    color:white;
+}
+a:hover{
+    color: #005ca0;
 }
