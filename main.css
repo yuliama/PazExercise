@@ -4,8 +4,46 @@
 body, html{
     padding:0;
     margin:0;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Arial (Hebrew)', Arial;
 }
 .container{
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
+}
+.container > header{
+    background-color: grey;
+    color:white;
+}
+.container > header > .header-content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 14px 0;
+}
+.container > header > .header-content img.logo{
+    position: relative;
+    top: 30px;
+}
+.container > header > .header-content .english{
+    padding-left: 17px;
+}
+.container nav{
+    flex:7;
+}
+.container nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container nav li{
+    list-style-type: none;
+}
+.row{
+    width:100%;
+    display:flex;
+}
+.end{
+    justify-content: flex-end;
+    align-items:flex-end;
 }
