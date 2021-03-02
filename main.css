@@ -55,11 +55,43 @@ html {
     list-style-type: none;
     font-size: 15px;
     font-weight: bold;
+    position: relative;
+
+}
+.container nav li a{
+    text-decoration: none;
+}
+.container nav li a:hover {
+    text-decoration: underline;
 }
 .container nav li.sep {
     background: url(images/menu_sep.png) repeat-x 0 0;
     height: 21px;
     width: 4px;
+}
+.container nav li > .submenu {
+    position: absolute;
+    width: max-content;
+    background: #909090 url(images/menu_dropdown_bg.png) repeat-x 0 0;
+    z-index: 99;
+    top: 36px;
+    right: 0;
+}
+.submenu{
+    display:none;
+}
+.container nav li:hover >.submenu, .container nav li >.submenu > a:hover{
+    display:block;
+}
+.container nav li > .submenu > a{
+    display: block;
+    border-bottom: #ABABAB 1px solid;
+    padding: 6px;
+    text-decoration: none;
+}
+.container nav li > .submenu > a:hover{
+    background-color: #bcbcbc;
+    text-decoration: underline;
 }
 /*end of header*/
 /*main content*/
@@ -173,7 +205,8 @@ html {
     bottom: 0px;
     width: 100%;
     margin: inherit;
-    height:38px;
+    height: 38px;
+    z-index: 999;
 }
 .container > footer ul {
     display: flex;
@@ -190,11 +223,11 @@ html {
 .container > footer li > img {
     margin-top: 4px;
 }
-.container > footer li:last-child > a{
-    color:red;
+.container > footer li:last-child > a {
+    color: red;
 }
-.container > footer li:last-child > a:hover{
-    color:#005ca0;
+.container > footer li:last-child > a:hover {
+    color: #005ca0;
 }
 .container > footer a {
     text-decoration: none;
