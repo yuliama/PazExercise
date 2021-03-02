@@ -13,7 +13,7 @@ body, html{
     margin: 0 auto;
 }
 .container > header{
-    background-color: grey;
+    background: #fff url("images/header_bg.png") repeat-x;
     color:white;
 }
 .container > header > .header-content{
@@ -23,10 +23,20 @@ body, html{
 }
 .container > header > .header-content img.logo{
     position: relative;
-    top: 30px;
+    top: -2px;
 }
 .container > header > .header-content .english{
     padding-left: 17px;
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container > header > .header-content .search{
+    width: 132px;
+    height: 19px;
+    border-top-right-radius: 7px;
+    border: none;
 }
 .container nav{
     flex:7;
@@ -34,10 +44,18 @@ body, html{
 .container nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 5px;
 }
 .container nav li{
     list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.container nav li.sep{
+    background: url(images/menu_sep.png) repeat-x 0 0;
+    height: 21px;
+    width: 4px;
 }
 .row{
     width:100%;
@@ -45,5 +63,5 @@ body, html{
 }
 .end{
     justify-content: flex-end;
-    align-items:flex-end;
+    align-items: center;
 }
