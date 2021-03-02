@@ -63,6 +63,7 @@ body, html{
 .container > main.homepage{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .container > main.homepage > .row{
     justify-content: space-between;
@@ -70,6 +71,7 @@ body, html{
 .container > main.homepage .banner{
     margin-left:13px;
     border-bottom-right-radius: 7px;;
+    position: relative;
 }
 .container > main.homepage .banner > img{
     border-bottom-right-radius: 24px;
@@ -77,8 +79,8 @@ body, html{
 .container > main.homepage .banner > .description{
     color:white;
     background-color:grey;
-    position: relative;
-    top: -112px;
+    position: absolute;
+    top: 241px;
     margin: 0 8px 0px 37px;
     border-bottom-right-radius: 25px;
     padding: 10px;
@@ -87,6 +89,7 @@ body, html{
     font-size: 13px;
     display: flex;
     flex-direction: column;
+    opacity: 0.9;
 }
 .container > main.homepage .banner > .description > h4{
     font-size: 14px;
@@ -102,6 +105,56 @@ body, html{
 }
 .container > main.homepage .banner > .description > a > span{
     padding-left: 12px;
+}
+.container > main.homepage .card{
+    background: url(images/small_cube_bg.png) no-repeat right top;
+    margin-top: 30px;
+    height: 216px;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex:1;
+}
+.container > main.homepage .card > h4{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 3px 20px 11px;
+}
+.container > main.homepage .card > img{
+    margin: 10px 15px;
+}
+.container > main.homepage .card img:last-child{
+    padding-left: 23px;
+}
+.container > main.homepage .card  a{
+    color: #72716d;
+    align-self: flex-end;
+    background: url(images/read_more_yellow.png) no-repeat left center;
+    margin-top:15px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+.container > main.homepage .card:last-child  a{
+    align-self: auto;
+    margin-top:8px;
+}
+.container > main.homepage .card  a:hover{
+    background: url(images/read_more_blue.png) no-repeat left center;
+    color: #005ca0;
+}
+.container > main.homepage .card  a > span{
+    padding-left: 12px;
+}
+.container > main.homepage .card > .locations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container > main.homepage .card > .locations > div{
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
 }
 /*end of main content*/
 .row{
