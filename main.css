@@ -60,6 +60,7 @@ html {
 }
 .container nav li a{
     text-decoration: none;
+    padding-bottom: 20px;
 }
 .container nav li a:hover {
     text-decoration: underline;
@@ -76,11 +77,9 @@ html {
     z-index: 99;
     top: 36px;
     right: 0;
-}
-.submenu{
     display:none;
 }
-.container nav li:hover >.submenu, .container nav li >.submenu > a:hover{
+.container nav li:hover >.submenu, .container nav li >.submenu > a:hover, .container nav li >.submenu:hover{
     display:block;
 }
 .container nav li > .submenu > a{
