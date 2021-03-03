@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="content">
-                <div class="breadcrumbs"><a href="#">עמוד הבית</a> > צור קשר</div>
+                <div class="breadcrumbs"><a href="index.html">עמוד הבית</a> > צור קשר</div>
                 <h3>צור קשר</h3>
                 <div class="contactUsFormContent">
                     <div>
@@ -109,22 +109,26 @@
                         <span class="bold formDesc">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד
                             לרשותכם :</span>
                         <span>* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
-                        <form>
+                        <form class="contactUsForm">
                             <div>
                                 <label for="firstName">* שם פרטי</label>
-                                <input type="text" id="firstName">
+                                <input type="text" id="firstName" required>
+                                <span class="error">שדה חובה</span>
                             </div>
                             <div>
                                 <label for="lastName">* שם משפחה</label>
-                                <input type="text" id="lastName">
+                                <input type="text" id="lastName" required>
+                                <span class="error">שדה חובה</span>
                             </div>
                             <div>
                                 <label for="phone">* טלפון</label>
-                                <input type="text" id="phone">
+                                <input type="text" id="phone" required>
+                                <span class="error">שדה חובה</span>
                             </div>
                             <div>
                                 <label for="email">* E-mail</label>
-                                <input type="text" id="email">
+                                <input type="email" id="email" required>
+                                <span class="error">שדה חובה</span>
                             </div>
                             <div>
                                 <textarea rows="6">תוכן הפנייה</textarea>

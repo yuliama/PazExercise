@@ -249,6 +249,7 @@ a:hover {
 }
 .container > main.contactUsPage > .content > .contactUsFormContent {
     background: url("images/contact_form_bg.png") no-repeat top right;
+    background-size: 385px 100%;
 }
 .container > main.contactUsPage > .content > .contactUsFormContent > div {
     width: 347px;
@@ -369,7 +370,14 @@ a:hover {
     text-decoration: underline;
     color: #005ca0;
 }
-
+.container > main.contactUsPage form span.error{
+    color: red;
+    display: none;
+    width: 100%;
+}
+.container > main.contactUsPage form.submitted input:invalid:required + .error {
+    display: block;
+}
 /*end of contact us page*/
 /*end of main content*/
 /*footer*/
