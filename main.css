@@ -21,6 +21,9 @@ html {
     justify-content: flex-end;
     align-items: center;
 }
+.bold {
+    font-weight: bold;
+}
 a {
     color: white;
 }
@@ -237,8 +240,126 @@ a:hover {
 .container > main.contactUsPage > .content {
     flex: 3;
 }
+.container > main.contactUsPage > .content > h3 {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent {
+    background: url("images/contact_form_bg.png") no-repeat top right;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div {
+    width: 347px;
+    min-height: 332px;
+    padding: 12px 18px;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > h4 {
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 0px;
+    margin-top: 9px;
+    margin-bottom: 14px;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > .formDesc {
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 245px;
+    margin: 3px auto;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button {
+    justify-content: flex-end;
+    height: 21px;
+    cursor: pointer;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button > .middle {
+    font-size: 14px;
+    background: url(images/button_blue.png) repeat-x 0 0;
+    color: #fff;
+    /* cursor: pointer; */
+    padding-top: 2px;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button:hover > .middle {
+    background: url(images/button_yellow.png) repeat-x 0 0;
+    color: #3c3c3c;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button > .right {
+    background: url(images/button_r.png) no-repeat 0 0;
+    width: 6px;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button:hover > .right {
+    background-position: -6px 0;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button > .left {
+    width: 6px;
+    background: url(images/button_l.png) no-repeat 0 0;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div.button:hover > .left {
+    background-position: -6px 0;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div > input {
+    width: 160px;
+}
+.container > main.contactUsPage > .content > .contactUsFormContent > div > form > div > textarea {
+    width: 100%;
+    padding: 3px;
+}
 .container > main.contactUsPage > .rightBarDetails {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    padding-right: 35px;
+}
+.container > main.contactUsPage > .rightBarDetails > .card {
+    background: url(images/small_cube_bg.png) no-repeat right top;
+    margin-top: 30px;
+    height: 216px;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1;
+}
+.container > main.contactUsPage > .rightBarDetails > .card > h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 3px 20px 11px;
+    color: #005ca0;
+}
+.container > main.contactUsPage > .rightBarDetails > .card > div{
+    margin-right: 17px;
+}
+.container > main.contactUsPage > .rightBarDetails > .card > div > span{
+    width:100%;
+    display:block;
+}
+.container > main.contactUsPage > .rightBarDetails > .card > div > span > a{
+    text-decoration: none;
+    color: rgb(0, 0, 238);
+    font-size: 13px;
+}
+.container > main.contactUsPage > .rightBarDetails > .card > div > span > a:hover{
+    text-decoration: underline;
+    color: #005CA0;
 }
 .container > main.contactUsPage a {
     color: #5c5c5c;
