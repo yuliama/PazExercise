@@ -13,6 +13,22 @@ html {
     width: 100%;
     margin: 0 auto;
 }
+.row {
+    width: 100%;
+    display: flex;
+}
+.end {
+    justify-content: flex-end;
+    align-items: center;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: #005ca0;
+    text-decoration: underline;
+}
+
 /*header*/
 .container > header {
     background: #fff url("images/header_bg.png") repeat-x;
@@ -56,9 +72,8 @@ html {
     font-size: 15px;
     font-weight: bold;
     position: relative;
-
 }
-.container nav li a{
+.container nav li a {
     text-decoration: none;
     padding-bottom: 20px;
 }
@@ -77,18 +92,20 @@ html {
     z-index: 99;
     top: 36px;
     right: 0;
-    display:none;
+    display: none;
 }
-.container nav li:hover >.submenu, .container nav li >.submenu > a:hover, .container nav li >.submenu:hover{
-    display:block;
-}
-.container nav li > .submenu > a{
+.container nav li:hover > .submenu,
+.container nav li > .submenu > a:hover,
+.container nav li > .submenu:hover {
     display: block;
-    border-bottom: #ABABAB 1px solid;
+}
+.container nav li > .submenu > a {
+    display: block;
+    border-bottom: #ababab 1px solid;
     padding: 6px;
     text-decoration: none;
 }
-.container nav li > .submenu > a:hover{
+.container nav li > .submenu > a:hover {
     background-color: #bcbcbc;
     text-decoration: underline;
 }
@@ -98,6 +115,7 @@ html {
     width: 900px;
     margin: inherit;
 }
+/*homepage*/
 .container > main.homepage {
     display: flex;
     flex-direction: row;
@@ -194,6 +212,44 @@ html {
     flex-direction: column;
     margin: 10px;
 }
+/*end of homepage*/
+/*contact us page*/
+.container > main.contactUsPage {
+    display: flex;
+    flex-direction: row;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+.container > main.contactUsPage > .leftMenu {
+    flex: 1;
+}
+.container > main.contactUsPage > .leftMenu > div {
+    width: 121px;
+    height: 36px;
+    padding-right: 12px;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #5c5c5c;
+    line-height: 32px;
+    background: url("images/side_menu_sprite.png") no-repeat 0 0;
+    border-top: 1px solid #dedede;
+}
+.container > main.contactUsPage > .content {
+    flex: 3;
+}
+.container > main.contactUsPage > .rightBarDetails {
+    flex: 2;
+}
+.container > main.contactUsPage a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+.container > main.contactUsPage a:hover {
+    text-decoration: underline;
+    color: #005ca0;
+}
+
+/*end of contact us page*/
 /*end of main content*/
 /*footer*/
 .container > footer {
@@ -240,18 +296,3 @@ html {
     width: 4px;
 } */
 /*end of footer*/
-.row {
-    width: 100%;
-    display: flex;
-}
-.end {
-    justify-content: flex-end;
-    align-items: center;
-}
-a {
-    color: white;
-}
-a:hover {
-    color: #005ca0;
-    text-decoration: underline;
-}
